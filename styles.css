@@ -486,3 +486,98 @@ main {
   box-shadow: var(--shadow-lg);
 }
 
+/* ========================================
+   Typography Token Demonstration
+======================================== */
+
+/* Font Family Examples */
+
+.font-demo-display {
+  font-family: var(--font-display);
+  font-size: var(--text-heading);
+}
+
+.font-demo-body {
+  font-family: var(--font-body);
+  font-size: var(--text-lg);
+}
+
+/* Font Size Examples */
+
+.type-sample {
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  overflow-wrap: anywhere;
+}
+
+.type-sample:last-child {
+  border-bottom: none;
+}
+
+.type-sample code {
+  font-family: monospace;
+  font-size: var(--text-xs);
+}
+
+.text-demo-xs {
+  font-size: var(--text-xs);
+}
+
+.text-demo-sm {
+  font-size: var(--text-sm);
+}
+
+.text-demo-base {
+  font-size: var(--text-base);
+}
+
+.text-demo-lg {
+  font-size: var(--text-lg);
+}
+
+.text-demo-xl {
+  font-size: var(--text-xl);
+}
+
+.text-demo-heading {
+  font-family: var(--font-display);
+  font-size: var(--text-heading);
+}
+
+.text-demo-display {
+  font-family: var(--font-display);
+  font-size: var(--text-display);
+}
+
+/* Font Weight Examples */
+
+.weight-demo-regular {
+  font-weight: var(--weight-regular);
+}
+
+.weight-demo-medium {
+  font-weight: var(--weight-medium);
+}
+
+.weight-demo-semibold {
+  font-weight: var(--weight-semibold);
+}
+
+.weight-demo-bold {
+  font-weight: var(--weight-bold);
+}
+
+/* Line Height Examples */
+
+.leading-demo-tight {
+  line-height: var(--leading-tight);
+}
+
+.leading-demo-normal {
+  line-height: var(--leading-normal);
+}
+
+.leading-demo-relaxed {
+  line-height: var(--leading-relaxed);
+}
+
