@@ -82,4 +82,10 @@ textarea {
   --space-12: 3rem;    /* 48px */
   --space-16: 4rem;    /* 64px */
 
+  /* Sizing and Measure Tokens */
+  --size-container: 75rem;  /* 1200px */
+  --size-reading: 68ch;     /* Readable text width */
+  --size-card-min: 16rem;   /* 256px */
+  --size-control-min: 2.75rem; /* 44px */
+
 }
