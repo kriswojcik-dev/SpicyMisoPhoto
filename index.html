@@ -755,6 +755,98 @@
       </aside>
     </section>
 
+    <!-- S6 — Control Foundations -->
+    <section id="controls" class="specimen-section">
+      <h2>S6 — Control Foundations</h2>
+
+      <p>
+        Form controls use consistent typography, spacing,
+        borders, and focus indicators to support an accessible
+        experience throughout SpicyMisoPhoto.
+      </p>
+
+      <h3>Photography Inquiry Form</h3>
+
+      <p>
+        This sample form demonstrates foundational control
+        styling. It does not collect or submit information.
+      </p>
+
+      <form class="specimen-form"
+            aria-label="Photography inquiry example">
+
+        <!-- Text Input -->
+        <div class="form-group">
+          <label for="visitor-name">Your Name</label>
+          <input
+            type="text"
+            id="visitor-name"
+            name="visitor-name"
+            placeholder="Enter your name">
+        </div>
+
+        <!-- Select Control -->
+        <div class="form-group">
+          <label for="inquiry-type">Inquiry Type</label>
+          <select id="inquiry-type" name="inquiry-type">
+            <option value="">Select an inquiry type</option>
+            <option value="portfolio">Portfolio Inquiry</option>
+            <option value="collaboration">Collaboration</option>
+            <option value="general">General Question</option>
+          </select>
+        </div>
+
+        <!-- Checkbox Control -->
+        <div class="form-group">
+          <div class="checkbox-group">
+            <input
+              type="checkbox"
+              id="updates"
+              name="updates">
+            <label for="updates">
+              I would like to receive photography updates.
+            </label>
+          </div>
+        </div>
+
+        <!-- Radio Controls -->
+        <fieldset class="form-group">
+          <legend>Preferred Contact Method</legend>
+
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="contact-email"
+              name="contact-method"
+              value="email">
+            <label for="contact-email">Email</label>
+          </div>
+
+          <div class="radio-group">
+            <input
+              type="radio"
+              id="contact-social"
+              name="contact-method"
+              value="social">
+            <label for="contact-social">Social Media</label>
+          </div>
+        </fieldset>
+
+        <!-- Button Control -->
+        <div class="form-group">
+          <button type="button" class="button button-primary">
+            Example Submit Button
+          </button>
+        </div>
+
+      </form>
+
+      <p class="photo-metadata">
+        This form is a visual and accessibility specimen only.
+        Submission functionality is not required.
+      </p>
+    </section>
+
   </main>
 </body>
 </html>
