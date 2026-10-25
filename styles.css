@@ -209,3 +209,75 @@ main {
 .specimen-section p {
   line-height: var(--leading-relaxed);
 }
+
+/* ========================================
+   S2 — Token Inventory Display
+======================================== */
+
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--size-card-min)), 1fr)
+  );
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+}
+
+.token-card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  min-width: 0;
+}
+
+.token-card h4 {
+  margin-bottom: var(--space-2);
+}
+
+.token-card p {
+  font-size: var(--text-sm);
+  margin-block: var(--space-2);
+}
+
+.token-card code {
+  font-size: var(--text-xs);
+  overflow-wrap: anywhere;
+}
+
+.color-swatch {
+  height: var(--space-16);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: var(--space-4);
+}
+
+.swatch-forest {
+  background-color: var(--color-forest);
+}
+
+.swatch-moss {
+  background-color: var(--color-moss);
+}
+
+.swatch-sage {
+  background-color: var(--color-sage);
+}
+
+.swatch-cream {
+  background-color: var(--color-cream);
+}
+
+.swatch-earth {
+  background-color: var(--color-earth);
+}
+
+.swatch-charcoal {
+  background-color: var(--color-charcoal);
+}
+
+.swatch-white {
+  background-color: var(--color-white);
+}
