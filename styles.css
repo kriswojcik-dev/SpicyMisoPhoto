@@ -281,3 +281,32 @@ main {
 .swatch-white {
   background-color: var(--color-white);
 }
+
+/* Semantic Token Table */
+
+.token-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.token-table th,
+.token-table td {
+  padding: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  text-align: left;
+  overflow-wrap: anywhere;
+}
+
+.token-table th {
+  color: var(--color-heading);
+  font-weight: var(--weight-semibold);
+}
+
+.token-table code {
+  font-size: var(--text-xs);
+}
+
+.token-table tr:last-child td {
+  border-bottom: none;
+}
