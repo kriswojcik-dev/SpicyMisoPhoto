@@ -73,19 +73,26 @@ textarea {
   --color-focus: var(--color-moss);
 
   /* Spacing Tokens */
-  --space-1: 0.25rem;  /* 4px */
-  --space-2: 0.5rem;   /* 8px */
-  --space-3: 0.75rem;  /* 12px */
-  --space-4: 1rem;     /* 16px */
-  --space-6: 1.5rem;   /* 24px */
-  --space-8: 2rem;     /* 32px */
-  --space-12: 3rem;    /* 48px */
-  --space-16: 4rem;    /* 64px */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
 
   /* Sizing and Measure Tokens */
-  --size-container: 75rem;  /* 1200px */
-  --size-reading: 68ch;     /* Readable text width */
-  --size-card-min: 16rem;   /* 256px */
-  --size-control-min: 2.75rem; /* 44px */
+  --size-container: 75rem;
+  --size-reading: 68ch;
+  --size-card-min: 16rem;
+  --size-control-min: 2.75rem;
+
+  /* Border Radius Tokens */
+  --radius-none: 0;
+  --radius-sm: 0.25rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+  --radius-full: 9999px;
 
 }
