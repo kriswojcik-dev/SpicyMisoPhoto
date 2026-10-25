@@ -350,3 +350,18 @@ main {
 .space-demo-12 { width: var(--space-12); }
 .space-demo-16 { width: var(--space-16); }
 
+/* Sizing and Measure Demonstration */
+
+.reading-demo {
+  max-width: var(--size-reading);
+  padding: var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.reading-demo p {
+  margin: 0;
+  line-height: var(--leading-relaxed);
+}
+
