@@ -757,3 +757,98 @@ a:active {
 .text-link:active {
   color: var(--color-earth);
 }
+
+/* ========================================
+   S5 — Surfaces and Content Patterns
+======================================== */
+
+/* Responsive Card Layout */
+
+.surface-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, var(--size-card-min)), 1fr)
+  );
+  gap: var(--space-6);
+  margin-block: var(--space-6);
+}
+
+/* Photography Cards */
+
+.photo-card {
+  min-width: 0;
+  overflow: hidden;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+
+.photo-card-content {
+  padding: var(--space-6);
+}
+
+.photo-card-content h4 {
+  font-size: var(--text-xl);
+  margin-block: var(--space-2);
+}
+
+.photo-card-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Media Placeholders */
+
+.media-placeholder {
+  display: grid;
+  place-items: center;
+  aspect-ratio: 3 / 2;
+  padding: var(--space-4);
+  background-color: var(--color-moss);
+  color: var(--color-white);
+  text-align: center;
+  font-size: var(--text-sm);
+}
+
+/* Informational Surface */
+
+.info-card {
+  max-width: var(--size-reading);
+  padding: var(--space-6);
+  margin-block: var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+}
+
+.info-card h4 {
+  margin-top: 0;
+  font-size: var(--text-xl);
+}
+
+.info-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* Notice / Callout */
+
+.notice {
+  max-width: var(--size-reading);
+  padding: var(--space-6);
+  margin-block: var(--space-6);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-left: var(--space-2) solid var(--color-moss);
+  border-radius: var(--radius-md);
+}
+
+.notice h4 {
+  margin-top: 0;
+  font-size: var(--text-xl);
+}
+
+.notice p:last-child {
+  margin-bottom: 0;
+}
