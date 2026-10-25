@@ -1,0 +1,46 @@
+
+/* ========================================
+   SpicyMisoPhoto Design System
+   S1 — Selective CSS Reset
+======================================== */
+
+/* Consistent element sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default page margin */
+body {
+  margin: 0;
+}
+
+/* Prevent media from overflowing containers */
+img,
+picture,
+video,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Improve readability for long text */
+p,
+li {
+  overflow-wrap: break-word;
+}
+
+/* Keep form typography consistent */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Preserve accessible focus indicators */
+:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+}
