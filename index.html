@@ -272,7 +272,7 @@
             </tr>
             <tr>
               <td><code>--size-reading</code></td>
-              <td>68ch</td>
+              <td>80ch</td>
               <td>Readable paragraph width</td>
             </tr>
             <tr>
@@ -484,7 +484,115 @@
           and editorial descriptions.
         </p>
       </div>
+    </section>
 
+    <!-- S3 — Typography Specimen -->
+    <section id="typography" class="specimen-section">
+      <h2>S3 — Typography Specimen</h2>
+
+      <p>
+        This section demonstrates the typography hierarchy,
+        readability, and text treatments used throughout
+        SpicyMisoPhoto.
+      </p>
+
+      <div class="type-specimen">
+
+        <p class="type-label">Page Title / Display</p>
+        <h1>Life Between the Streets</h1>
+
+        <p class="type-label">Heading Level 2</p>
+        <h2>Stories in Every Corner</h2>
+
+        <p class="type-label">Heading Level 3</p>
+        <h3>Finding Beauty in the Ordinary</h3>
+
+        <p class="type-label">Body Paragraph</p>
+        <p>
+          Street photography is about observing the moments
+          that often go unnoticed. From quiet city mornings
+          to crowded intersections, every environment
+          offers a different perspective.
+        </p>
+
+        <p>
+          SpicyMisoPhoto explores the relationship between
+          people, architecture, and everyday life through
+          candid compositions and natural lighting.
+        </p>
+
+        <p class="type-label">Unordered List</p>
+        <ul>
+          <li>Urban architecture and city landscapes</li>
+          <li>Candid moments and everyday interactions</li>
+          <li>Light, shadow, and visual storytelling</li>
+        </ul>
+
+        <p class="type-label">Metadata / Small Text</p>
+        <p class="photo-metadata">
+          Philadelphia, PA · Street Photography · 2026
+        </p>
+
+        <p class="type-label">Inline Code</p>
+        <p>
+          The typography system uses
+          <code>var(--font-display)</code> for headings and
+          <code>var(--font-body)</code> for body text.
+        </p>
+
+        <p class="type-label">Text Link</p>
+        <p>
+          Explore the
+          <a href="#tokens">design token inventory</a>
+          to see the system behind these styles.
+        </p>
+
+      </div>
+
+      <h3>Typography Documentation</h3>
+
+      <div class="type-documentation">
+        <p>
+          <strong>Display font:</strong> Cormorant Garamond,
+          used for headings and editorial titles.
+          Fallback: Georgia, serif.
+        </p>
+
+        <p>
+          <strong>Body font:</strong> Inter, used for paragraphs,
+          navigation, labels, and controls.
+          Fallback: Arial, sans-serif.
+        </p>
+
+        <p>
+          <strong>Font source:</strong> Google Fonts.
+          Both font families use the SIL Open Font License 1.1.
+        </p>
+
+        <p>
+          <strong>Available weights and styles:</strong>
+          Cormorant Garamond uses regular, medium,
+          semibold, and bold weights, plus regular italic.
+          Inter uses regular, medium, semibold, and bold.
+        </p>
+
+        <p>
+          <strong>Responsive sizing:</strong> Large headings
+          use clamp() to scale between minimum and maximum
+          sizes according to the viewport.
+        </p>
+
+        <p>
+          <strong>Reading measure:</strong> Longer text is
+          limited to 68ch to maintain readable line lengths.
+        </p>
+
+        <p>
+          <strong>Fallback strategy:</strong> If Google Fonts
+          cannot load, the browser displays Georgia or Arial
+          followed by generic serif or sans-serif fonts.
+        </p>
+      </div>
     </section>
 
   </main>

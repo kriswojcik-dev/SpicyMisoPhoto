@@ -84,7 +84,7 @@ textarea {
 
   /* Sizing and Measure Tokens */
   --size-container: 75rem;
-  --size-reading: 68ch;
+  --size-reading: 80ch;
   --size-card-min: 16rem;
   --size-control-min: 2.75rem;
 
@@ -581,3 +581,77 @@ main {
   line-height: var(--leading-relaxed);
 }
 
+
+/* ========================================
+   S3 — Typography Specimen
+======================================== */
+
+.type-specimen {
+  max-width: var(--size-reading);
+  margin-top: var(--space-8);
+}
+
+.type-label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  color: var(--color-moss);
+  margin-top: var(--space-8);
+  margin-bottom: var(--space-2);
+}
+
+.type-specimen h1,
+.type-specimen h2,
+.type-specimen h3 {
+  margin-top: 0;
+  margin-bottom: var(--space-4);
+}
+
+.type-specimen p,
+.type-specimen li {
+  line-height: var(--leading-relaxed);
+}
+
+.photo-metadata {
+  font-size: var(--text-sm);
+  color: var(--color-moss);
+}
+
+.type-specimen code {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-1);
+  overflow-wrap: anywhere;
+}
+
+/* Text Links */
+
+a {
+  color: var(--color-action);
+  text-decoration: underline;
+  text-underline-offset: var(--space-1);
+}
+
+a:hover {
+  color: var(--color-moss);
+}
+
+a:active {
+  color: var(--color-earth);
+}
+
+/* Typography Documentation */
+
+.type-documentation {
+  max-width: var(--size-reading);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  margin-top: var(--space-4);
+}
+
+.type-documentation p {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+}
