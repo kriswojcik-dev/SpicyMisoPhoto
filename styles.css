@@ -365,3 +365,64 @@ main {
   line-height: var(--leading-relaxed);
 }
 
+/* ========================================
+   Border Radius Token Demonstration
+======================================== */
+
+.radius-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(100%, 10rem), 1fr)
+  );
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.radius-example {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  min-width: 0;
+}
+
+.radius-shape {
+  height: var(--space-16);
+  background-color: var(--color-moss);
+  margin-bottom: var(--space-4);
+}
+
+.radius-demo-none {
+  border-radius: var(--radius-none);
+}
+
+.radius-demo-sm {
+  border-radius: var(--radius-sm);
+}
+
+.radius-demo-md {
+  border-radius: var(--radius-md);
+}
+
+.radius-demo-lg {
+  border-radius: var(--radius-lg);
+}
+
+.radius-demo-full {
+  border-radius: var(--radius-full);
+}
+
+.radius-example h4 {
+  margin-bottom: var(--space-2);
+}
+
+.radius-example code {
+  font-size: var(--text-xs);
+  overflow-wrap: anywhere;
+}
+
+.radius-example p {
+  font-size: var(--text-sm);
+}
+
