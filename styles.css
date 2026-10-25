@@ -163,3 +163,49 @@ p, ul, ol {
   max-width: var(--size-reading);
 }
 
+/* ========================================
+   Specimen Page Layout
+======================================== */
+
+/* Website Header */
+.site-header {
+  background-color: var(--color-forest);
+  color: var(--color-cream);
+  padding: var(--space-8) var(--space-6);
+}
+
+.site-name {
+  font-family: var(--font-display);
+  font-size: var(--text-heading);
+  font-weight: var(--weight-semibold);
+  line-height: var(--leading-tight);
+  margin: 0;
+}
+
+.site-description {
+  font-size: var(--text-sm);
+  margin-top: var(--space-2);
+  margin-bottom: 0;
+}
+
+/* Main Content Container */
+main {
+  width: min(100% - 2 * var(--space-4), var(--size-container));
+  margin-inline: auto;
+  padding-block: var(--space-8);
+}
+
+/* Specimen Sections */
+.specimen-section {
+  padding-block: var(--space-8);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.specimen-section h1,
+.specimen-section h2 {
+  margin-top: 0;
+}
+
+.specimen-section p {
+  line-height: var(--leading-relaxed);
+}
