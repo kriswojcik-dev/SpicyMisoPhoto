@@ -127,3 +127,39 @@ textarea {
   --leading-relaxed: 1.7;
 
 }
+
+/* ========================================
+   S3 — Base Typography
+======================================== */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  color: var(--color-heading);
+  line-height: var(--leading-tight);
+  font-weight: var(--weight-semibold);
+}
+
+h1 {
+  font-size: var(--text-display);
+}
+
+h2 {
+  font-size: var(--text-heading);
+}
+
+h3 {
+  font-size: var(--text-xl);
+}
+
+p, ul, ol {
+  max-width: var(--size-reading);
+}
+
