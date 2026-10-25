@@ -44,3 +44,31 @@ textarea {
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
+
+
+/* ========================================
+   S2 — Design Tokens
+======================================== */
+
+:root {
+  /* Brand Colors */
+  --color-forest: #203D32;
+  --color-moss: #526B4E;
+  --color-sage: #A8B9A0;
+  --color-cream: #F5F1E7;
+  --color-earth: #80674F;
+
+  /* Neutral Colors */
+  --color-white: #FFFFFF;
+  --color-charcoal: #252B27;
+
+  /* Semantic Colors */
+  --color-background: var(--color-cream);
+  --color-surface: var(--color-white);
+  --color-text: var(--color-charcoal);
+  --color-heading: var(--color-forest);
+  --color-border: var(--color-sage);
+  --color-action: var(--color-forest);
+  --color-action-text: var(--color-white);
+  --color-focus: var(--color-moss);
+}
