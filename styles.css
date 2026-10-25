@@ -101,4 +101,29 @@ textarea {
   --shadow-md: 0 4px 12px rgba(32, 61, 50, 0.12);
   --shadow-lg: 0 8px 24px rgba(32, 61, 50, 0.16);
 
+  /* Typography Tokens */
+  /* Font Families */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Inter", Arial, sans-serif;
+
+  /* Font Sizes */
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.25rem;
+  --text-xl: 1.5rem;
+  --text-heading: clamp(1.75rem, 3vw, 2.5rem);
+  --text-display: clamp(2.5rem, 5vw, 4rem);
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  /* Line Heights */
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
 }
