@@ -95,4 +95,10 @@ textarea {
   --radius-lg: 1rem;
   --radius-full: 9999px;
 
+  /* Elevation Tokens */
+  --shadow-none: none;
+  --shadow-sm: 0 2px 6px rgba(32, 61, 50, 0.08);
+  --shadow-md: 0 4px 12px rgba(32, 61, 50, 0.12);
+  --shadow-lg: 0 8px 24px rgba(32, 61, 50, 0.16);
+
 }
