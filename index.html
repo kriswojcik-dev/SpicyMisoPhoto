@@ -584,7 +584,7 @@
 
         <p>
           <strong>Reading measure:</strong> Longer text is
-          limited to 68ch to maintain readable line lengths.
+          limited to 80ch to maintain readable line lengths.
         </p>
 
         <p>
@@ -592,6 +592,90 @@
           cannot load, the browser displays Georgia or Arial
           followed by generic serif or sans-serif fonts.
         </p>
+      </div>
+    </section>
+
+    <!-- S4 — Actions and States -->
+    <section id="actions" class="specimen-section">
+      <h2>S4 — Actions and States</h2>
+
+      <p>
+        Actions use consistent colors, typography, and spacing
+        to help visitors navigate SpicyMisoPhoto and explore
+        the photography portfolio.
+      </p>
+
+      <h3>Action Examples</h3>
+
+      <div class="action-group">
+        <a href="#typography" class="text-link">
+          View Typography
+        </a>
+
+        <a href="#tokens" class="button button-primary">
+          Explore Portfolio
+        </a>
+
+        <a href="#foundation" class="button button-secondary">
+          Learn More
+        </a>
+      </div>
+
+      <h3>Disabled States</h3>
+
+      <div class="action-group">
+        <button class="button button-primary" disabled>
+          Primary Disabled
+        </button>
+
+        <button class="button button-secondary" disabled>
+          Secondary Disabled
+        </button>
+      </div>
+
+      <p class="photo-metadata">
+        Disabled controls are intentionally unavailable
+        and cannot receive keyboard focus.
+      </p>
+
+      <h3>Interaction State Demonstration</h3>
+
+      <p>
+        Use your mouse and keyboard to test the buttons above.
+        The table describes the expected behavior.
+      </p>
+
+      <div class="token-card">
+        <table class="token-table">
+          <thead>
+            <tr>
+              <th scope="col">State</th>
+              <th scope="col">Expected Appearance</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Default</td>
+              <td>Standard button styling</td>
+            </tr>
+            <tr>
+              <td>Hover</td>
+              <td>Background or text color changes</td>
+            </tr>
+            <tr>
+              <td>Keyboard Focus</td>
+              <td>Visible focus outline</td>
+            </tr>
+            <tr>
+              <td>Active</td>
+              <td>Button appearance changes while pressed</td>
+            </tr>
+            <tr>
+              <td>Disabled</td>
+              <td>Muted appearance with no interaction</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 

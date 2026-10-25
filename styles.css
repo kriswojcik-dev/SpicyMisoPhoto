@@ -655,3 +655,105 @@ a:active {
   font-size: var(--text-sm);
   line-height: var(--leading-relaxed);
 }
+
+/* ========================================
+   S4 — Actions and States
+======================================== */
+
+/* Action Layout */
+
+.action-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-block: var(--space-6);
+}
+
+/* Shared Button Styles */
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--size-control-min);
+  max-width: 100%;
+  padding: var(--space-3) var(--space-6);
+  border: 1px solid transparent;
+  border-radius: var(--radius-md);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-medium);
+  line-height: var(--leading-normal);
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Primary Button */
+
+.button-primary {
+  background-color: var(--color-action);
+  color: var(--color-action-text);
+  border-color: var(--color-action);
+}
+
+.button-primary:hover:not(:disabled) {
+  background-color: var(--color-moss);
+  border-color: var(--color-moss);
+  color: var(--color-white);
+}
+
+/* Secondary Button */
+
+.button-secondary {
+  background-color: transparent;
+  color: var(--color-action);
+  border-color: var(--color-action);
+}
+
+.button-secondary:hover:not(:disabled) {
+  background-color: var(--color-sage);
+  color: var(--color-forest);
+}
+
+/* Active States */
+
+.button-primary:active:not(:disabled),
+.button-secondary:active:not(:disabled) {
+  background-color: var(--color-earth);
+  border-color: var(--color-earth);
+  color: var(--color-white);
+}
+
+/* Keyboard Focus */
+
+.button:focus-visible,
+.text-link:focus-visible {
+  outline: 3px solid var(--color-focus);
+  outline-offset: var(--space-1);
+}
+
+/* Disabled States */
+
+.button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+  box-shadow: var(--shadow-none);
+}
+
+/* Text Links */
+
+.text-link {
+  color: var(--color-action);
+  font-weight: var(--weight-semibold);
+  text-underline-offset: var(--space-1);
+}
+
+.text-link:hover {
+  color: var(--color-moss);
+}
+
+.text-link:active {
+  color: var(--color-earth);
+}
