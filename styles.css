@@ -1121,3 +1121,43 @@ fieldset.form-group {
     grid-column: 1;
   }
 }
+
+/* ========================================
+   Theme Comparison Display
+======================================== */
+
+.theme-preview {
+  padding: var(--space-6);
+  margin-block: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.theme-preview > h3,
+.theme-preview > h4 {
+  margin-top: var(--space-6);
+}
+
+.theme-preview > h3:first-child {
+  margin-top: 0;
+}
+
+.theme-preview .photo-card {
+  max-width: 28rem;
+}
+
+/* Keep fieldset legends consistent in both themes */
+
+fieldset.form-group legend {
+  color: var(--color-heading);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-semibold);
+}
+
+/* Additional narrow-screen adjustments */
+
+@media (max-width: 480px) {
+  .theme-preview {
+    padding: var(--space-4);
+  }
+}
