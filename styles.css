@@ -72,6 +72,13 @@ textarea {
   --color-action-text: var(--color-white);
   --color-focus: var(--color-moss);
 
+  /* Interactive State Tokens */
+  --color-action-hover: var(--color-moss);
+  --color-action-hover-text: var(--color-white);
+  --color-action-active: var(--color-earth);
+  --color-secondary-hover: var(--color-sage);
+
+
   /* Spacing Tokens */
   --space-1: 0.25rem;
   --space-2: 0.5rem;
@@ -125,6 +132,38 @@ textarea {
   --leading-tight: 1.2;
   --leading-normal: 1.5;
   --leading-relaxed: 1.7;
+
+}
+
+/* ========================================
+   Alternate Theme — Dark Forest
+======================================== */
+
+.theme-dark {
+  /* Background and Surfaces */
+  --color-background: #172B23;
+  --color-surface: #284235;
+
+  /* Text and Headings */
+  --color-text: #F5F1E7;
+  --color-heading: #F5F1E7;
+
+  /* Borders */
+  --color-border: #748C77;
+
+  /* Actions */
+  --color-action: #D1E0C5;
+  --color-action-text: #172B23;
+
+  /* Keyboard Focus */
+  --color-focus: #E4D49A;
+
+
+  /* Interactive State Overrides */
+  --color-action-hover: #F5F1E7;
+  --color-action-hover-text: #172B23;
+  --color-action-active: #E4D49A;
+  --color-secondary-hover: #284235;
 
 }
 
@@ -690,32 +729,30 @@ a:active {
   cursor: pointer;
 }
 
-/* Primary Button */
-
-.button-primary {
-  background-color: var(--color-action);
-  color: var(--color-action-text);
-  border-color: var(--color-action);
-}
+/* Primary Button Hover */
 
 .button-primary:hover:not(:disabled) {
-  background-color: var(--color-moss);
-  border-color: var(--color-moss);
-  color: var(--color-white);
+  background-color: var(--color-action-hover);
+  border-color: var(--color-action-hover);
+  color: var(--color-action-hover-text);
 }
 
-/* Secondary Button */
-
-.button-secondary {
-  background-color: transparent;
-  color: var(--color-action);
-  border-color: var(--color-action);
-}
+/* Secondary Button Hover */
 
 .button-secondary:hover:not(:disabled) {
-  background-color: var(--color-sage);
-  color: var(--color-forest);
+  background-color: var(--color-secondary-hover);
+  color: var(--color-action-text);
 }
+
+/* Active States */
+
+.button-primary:active:not(:disabled),
+.button-secondary:active:not(:disabled) {
+  background-color: var(--color-action-active);
+  border-color: var(--color-action-active);
+  color: var(--color-action-text);
+}
+
 
 /* Active States */
 
