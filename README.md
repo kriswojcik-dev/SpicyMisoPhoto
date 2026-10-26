@@ -114,6 +114,14 @@ navigation between pages, or functional form submission.
 
 
 ## Testing and Evidence
+### Testing Evidence
+
+Testing was completed using Chrome DevTools, WebAIM
+Contrast Checker, Nu HTML Checker, and W3C CSS Validator.
+
+The observations and contrast measurements are recorded
+below. The control-border contrast revision is documented
+as evidence of an accessibility improvement.
 
 ### Test 1 — Responsive Layout
 
