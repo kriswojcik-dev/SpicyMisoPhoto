@@ -847,6 +847,114 @@
       </p>
     </section>
 
+    <!-- Alternate Theme Demonstration -->
+    <section id="themes" class="specimen-section">
+      <h2>Theme Comparison</h2>
+
+      <p>
+        SpicyMisoPhoto uses a warm cream default theme
+        and an alternate Dark Forest theme. Both themes
+        share the same component styles and use semantic
+        color tokens to control their appearance.
+      </p>
+
+      <div class="theme-dark theme-preview">
+        <h3>Dark Forest Theme</h3>
+
+        <p>
+          The alternate theme uses deep green backgrounds,
+          cream typography, and pale sage accents to
+          create a moodier photography experience.
+        </p>
+
+        <h4>Photography Card</h4>
+
+        <article class="photo-card">
+          <div class="media-placeholder" role="img"
+               aria-label="Dark theme photography placeholder">
+            <span>Street Photography Image</span>
+          </div>
+
+          <div class="photo-card-content">
+            <p class="photo-metadata">Philadelphia · 2026</p>
+            <h4>After Dark</h4>
+            <p>
+              Exploring city streets, artificial lighting,
+              and the atmosphere of nighttime photography.
+            </p>
+          </div>
+        </article>
+
+        <h4>Actions and States</h4>
+
+        <div class="action-group">
+          <a href="#surfaces" class="button button-primary">
+            Explore Photography
+          </a>
+
+          <a href="#typography" class="button button-secondary">
+            View Typography
+          </a>
+        </div>
+
+        <div class="action-group">
+          <button class="button button-primary" disabled>
+            Disabled Button
+          </button>
+        </div>
+
+        <h4>Form Controls</h4>
+
+        <div class="specimen-form">
+          <div class="form-group">
+            <label for="dark-name">Your Name</label>
+            <input
+              type="text"
+              id="dark-name"
+              name="dark-name"
+              placeholder="Enter your name">
+          </div>
+
+          <div class="form-group">
+            <label for="dark-inquiry">Inquiry Type</label>
+            <select id="dark-inquiry" name="dark-inquiry">
+              <option value="">Select an inquiry type</option>
+              <option value="portfolio">Portfolio Inquiry</option>
+              <option value="collaboration">Collaboration</option>
+            </select>
+          </div>
+
+          <div class="checkbox-group">
+            <input type="checkbox" id="dark-updates">
+            <label for="dark-updates">
+              Receive photography updates
+            </label>
+          </div>
+
+          <fieldset class="form-group">
+            <legend>Preferred Contact Method</legend>
+
+            <div class="radio-group">
+              <input type="radio" id="dark-email"
+                     name="dark-contact" value="email">
+              <label for="dark-email">Email</label>
+            </div>
+
+            <div class="radio-group">
+              <input type="radio" id="dark-social"
+                     name="dark-contact" value="social">
+              <label for="dark-social">Social Media</label>
+            </div>
+          </fieldset>
+
+          <button type="button" class="button button-primary">
+            Example Button
+          </button>
+        </div>
+
+      </div>
+    </section>
+
   </main>
 </body>
 </html>
